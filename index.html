@@ -2,8 +2,11 @@
 <html>
 
 <head>
+
     <title>UD Competitive Programming Club</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
@@ -11,25 +14,53 @@
 </head>
 
 <body>
-
+    <!-- 
     <nav id="navbar">
-        <a href="#">
-            <img src="icon.png" id="icon" />
-        </a>
-        <a href="#">Home</a>
+        <a href="#home"><img src="icon.png" id="icon" /></a>
         <a href="#about">About</a>
         <a href="#resources">Resources</a>
         <a href="#meetings">Meeting Info</a>
         <a target="_blank" href="https://discord.com/invite/wESUtQ7V">Discord</a>
+    </nav> -->
 
-    </nav>
+    <div id="navbar">
+        <div id="navbarWrap">
+            <a href="#home"><img src="icon.png" id="icon" /></a>
+            <nav id="navigation">
+                <div id="hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
+                    </svg>
+                </div>
+                <a href="#about">About</a>
+                <a href="#resources">Resources</a>
+                <a href="#meetings">Meeting Info</a>
+                <a target="_blank" href="https://discord.com/invite/wESUtQ7V">Discord</a>
+            </nav>
+        </div>
+    </div>
 
     <div id="content">
-        <div>UD CPC</div>
+        <div class="section" id="home">
+            <h1 class="title">UD CPC</h1>
+        </div>
+        <div class="section" id="about">
+            <h1 class="title">About</h1>
+        </div>
+        <div class="section" id="resources">
+            <h1 class="title">Resources</h1>
+        </div>
+        <div class="section" id="meetings">
+            <h1 class="title">Meeting Info</h1>
+            <div id="calendar">
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FNew_York&showTitle=0&showPrint=0&showCalendars=1&title=UD%20CPC&mode=AGENDA&src=YW1hbnNAdWRlbC5lZHU&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19obDg4MGNlYmNja2VhYzh2YWQ1cGh0bmkxZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043&color=%23F6BF26"
+                    style="border-width:0" width="800" height="450" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
     </div>
 
     <div id="footer">
-        <span id="date">2022</span> •
+        <span id="date"></span> •
         <a target="_blank" href="https://github.com/amansjot/ud-cpc-website">Source Code</a>
     </div>
 
