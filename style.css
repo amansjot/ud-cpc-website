@@ -15,26 +15,6 @@ body {
     font-family: 'Source Code Pro', sans-serif;
 }
 
-
-/* #navbar {
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-color: #311553;
-}
-
-#navbar a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    transform: translateY(-25px);
-}
-*/
-
 #icon {
     height: 65px;
 }
