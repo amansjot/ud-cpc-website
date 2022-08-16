@@ -9,7 +9,7 @@
 
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto+Mono">
 
     <link rel="icon" type="image/x-icon" href="logo-favicon.png">
 
@@ -19,23 +19,23 @@
 
     <div id="navbar">
         <div id="navbarWrap">
-            <a href="#home"><img src="logo-nav.png" id="icon" /></a>
+            <a onclick="goTo('#home')"><img src="logo-nav.png" id="icon" /></a>
             <nav id="navigation">
                 <div id="hamburger">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
                     </svg>
                 </div>
-                <a href="#about">About</a>
-                <a href="#resources">Resources</a>
-                <a href="#meetings">Meeting Info</a>
+                <a onclick="goTo('#about')">About</a>
+                <a onclick="goTo('#resources')">Resources</a>
+                <a onclick="goTo('#meetings')">Meeting Info</a>
                 <a target="_blank" href="https://discord.com/invite/wESUtQ7V">Discord</a>
             </nav>
         </div>
     </div>
 
     <div id="content">
-        <div class="section" id="home">
+        <div class="section active" id="home">
             <h1 class="title">UD CPC</h1>
             <div id="videoContainer">
                 <div class="text">Watch <a class="white-link" target="_blank" title="IOI Official Site" href="https://ioinformatics.org/">IOI</a> champion William Lin explain competitive programming:</div>
@@ -44,15 +44,82 @@
         </div>
         <div class="section" id="about">
             <h1 class="title">About</h1>
+            <div id="aboutContent">
+                <b><u>What is Competitive Programming?</u></b><br/>Competitive programming is a mind sport where you'll be given some set of algorithmic challenges and a fairly short amount of time to submit code that produces an exact solution. In this
+                way it's not dissimilar to math competitions, though they are a bit more expansive since you can do more with a computer.<br/><br/><b><u>How to improve?</u></b><br/>Unfortunately, there is no real shortcut. It is not a quick or easy process,
+                the only way to get better is to practice. 'Practice' means solving problems, spending time working through problems and learning how to break down a problem to its core and logically think of the next steps. While it is still important
+                to study theory, practicing problem solving skills should be your main focus.<br/><br/><u>It's also important to reflect on your time spent when you finish working on a problem.</u>
+
+                <ul>
+                    <li>How did you arrive at the solution?</li>
+                    <li>What made you realize something would or wouldn't work?</li>
+                    <li>If something didn't work why did you not realize the idea didn't work earlier?</li>
+                    <li>Was this problem too easy?</li>
+                </ul>
+
+                To draw an analogy, lifting 100 pound weights 500 times won't help you do the 150 pound weights at all. It only makes you better at 100 pound weights, likewise doing easy problems only makes you better at easy problems.<br/><br/><u>If you didn't finish a problem, can't solve it, or are just exhausted</u>
+
+                <ul>
+                    <li>Was this problem too hard? (have no ideas)</li>
+                    <li>Was there some data structure or optimization vou don't know how to make? (insufficient knowledge)</li>
+                </ul>
+
+                Again, these aren't easy questions to answer. The process isn't easy and it never will be (it's part of the reason so many of us enjoy it so much), the process of getting better is never ending. If you're ever feeling drained or feel like you stop having
+                fun, it's ok to take breaks. Burnout is a real thing so make sure to take your mental health seriously too!
+            </div>
         </div>
         <div class="section" id="resources">
             <h1 class="title">Resources</h1>
+            <div id="resourcesContent">
+                <div class="subtitle">Competition Sites</div>
+                <div class="flex-container">
+                    <div class="resource-card">
+                        <div class="link-title">
+                            <a target="_blank" href="https://codeforces.com/">CodeForces.com</a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="link-title">
+                            <a target="_blank" href="https://www.codechef.com/">CodeChef.com</a>
+                        </div>
+                    </div>
+                </div><br/>
+                <div class="subtitle">Resources</div>
+                <div class="flex-container">
+                    <div class="resource-card">
+                        <div class="link-title">
+                            <a target="_blank" href="https://contest.cs.cmu.edu/295/s22/">Cmu - cs295 at Carnegie Mellon : Competition Programming</a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="link-title">
+                            <a target="_blank" href="https://usaco.guide">Usaco.guide - Complete Guide on competitive programming</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="resource-card">
+                        <div class="link-title">
+                            <a target="_blank" href="https://usaco.guide/CPH.pdf">CPH : textbook for comp prog</a>
+                        </div>
+                    </div>
+                    <div class="resource-card">
+                        <div class="link-title">
+                            <a target="_blank" href="https://cses.fi/problemset/">CSES Standard problems list</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="section" id="meetings">
             <h1 class="title">Meeting Info</h1>
-            <div id="calendar">
+            <!-- <div id="calendar">
                 <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FNew_York&showTitle=0&showPrint=0&showCalendars=1&title=UD%20CPC&mode=AGENDA&src=YW1hbnNAdWRlbC5lZHU&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y19obDg4MGNlYmNja2VhYzh2YWQ1cGh0bmkxZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043&color=%23F6BF26"
                     style="border-width:0" width="800" height="450" frameborder="0" scrolling="no"></iframe>
+            </div> -->
+            <div id="meetingContent">
+                Fall Semester Meetings: Thursdays 6:00pm - 8:00pm<br/>
+                <a id="addScheduleBtn" target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MHBqNGU5MnRwM21icmMwZHJ1dXUwOWh0NWpfMjAyMjA5MDFUMjIwMDAwWiBjX2hsODgwY2ViY2NrZWFjOHZhZDVwaHRuaTFnQGc&amp;tmsrc=c_hl880cebcckeac8vad5phtni1g%40group.calendar.google.com&amp;scp=ALL">Add to Google Calendar <img border="0" height="25" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/768px-Google_Calendar_icon_%282020%29.svg.png"></a><br/>                Feel free to come and go at any time during this block!
             </div>
         </div>
     </div>

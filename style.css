@@ -6,13 +6,13 @@ html,
 body {
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body {
     background-color: #616161;
     color: white;
-    font-family: 'Source Code Pro', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
 }
 
 #icon {
@@ -49,6 +49,11 @@ body {
 .section {
     height: 100vh;
     padding-top: 75px;
+    display: none;
+}
+
+.active {
+    display: block;
 }
 
 .title {
@@ -56,6 +61,7 @@ body {
     padding: 30px;
     padding-bottom: 0;
     text-align: left;
+    font-family: 'Source Code Pro', sans-serif;
 }
 
 #calendar {
@@ -88,6 +94,8 @@ body {
     text-decoration: none;
     padding: 0.5rem 1rem;
     color: white;
+    cursor: pointer;
+    font-family: 'Source Code Pro', sans-serif;
 }
 
 #navbar #navigation {
@@ -194,4 +202,66 @@ iframe {
 
 .white-link {
     color: white;
+}
+
+#aboutContent {
+    padding: 0 10% 100px 10%;
+}
+
+#resourcesContent {
+    padding: 0 5% 100px 5%;
+}
+
+#meetingContent {
+    padding: 0 5% 100px 5%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.resource-card {
+    flex: 50%;
+    background-color: black;
+    border: 1px solid white;
+    padding: 20px;
+    margin: 10px;
+}
+
+@media (max-width: 1000px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+.link-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.link-title a:hover {
+    text-decoration: underline;
+}
+
+.subtitle {
+    margin-bottom: 15px;
+}
+
+#addScheduleBtn {
+    padding: 13px 20px;
+    line-height: 5;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    text-decoration: none;
+}
+
+#addScheduleBtn:hover {
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+#addScheduleBtn img {
+    margin-bottom: -6px;
 }
