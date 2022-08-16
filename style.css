@@ -6,13 +6,13 @@ html,
 body {
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 body {
     background-color: #616161;
     color: white;
-    font-family: 'Source Code Pro', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
 }
 
 #icon {
@@ -56,6 +56,7 @@ body {
     padding: 30px;
     padding-bottom: 0;
     text-align: left;
+    font-family: 'Source Code Pro', sans-serif;
 }
 
 #calendar {
@@ -88,6 +89,7 @@ body {
     text-decoration: none;
     padding: 0.5rem 1rem;
     color: white;
+    font-family: 'Source Code Pro', sans-serif;
 }
 
 #navbar #navigation {
@@ -194,4 +196,8 @@ iframe {
 
 .white-link {
     color: white;
+}
+
+#aboutContent {
+    padding: 0 10%;
 }
