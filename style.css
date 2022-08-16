@@ -65,7 +65,7 @@ body {
 #navbar {
     padding: 1rem;
     width: 100vw;
-    background-color: #311553;
+    background-color: #0044aa;
     z-index: 9999;
     position: fixed;
     top: 0;
@@ -175,4 +175,23 @@ body {
         margin-right: 0;
         color: white;
     }
+}
+
+#videoContainer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+iframe {
+    max-width: 746px;
+    width: 100vw;
+}
+
+.text {
+    margin-bottom: 15px;
+    margin-top: -5px;
+}
+
+.white-link {
+    color: white;
 }
